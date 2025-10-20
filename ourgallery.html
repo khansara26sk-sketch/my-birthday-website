@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <style>
+    body {
+      background-color: #ffe6f0;
+      font-family: cursive;
+      text-align: center;
+      color: #b71c1c;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(255, 0, 102, 0.4);
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #c2185b;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>📸 Our Gallery of Love 📸</h1>
+
+  <div class="gallery">
+    <img src="images/0c273a73-1b76-428f-8627-a8288e887634.jpg" alt="Memory 1">
+    <img src="images/57ee7938-c800-4da3-aeee-3649437e795f.jpg" alt="Memory 2">
+    <img src="images/a83ff355-5792-4bd0-a3c9-65e7703c23dc.jpg" alt="Memory 3">
+    <img src="images/fb38df4a-65e8-42c1-a38b-596b8ed3ae67.jpg" alt="Memory 4">
+  </div>
+
+  <a href="memories.html">← Back to Memories</a>
+  <br>
+  <a href="myfeelings.html">-
+    Go to my girlfriend's message</a>
+</body>
+</html>

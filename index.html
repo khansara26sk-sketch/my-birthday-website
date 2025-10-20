@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Birthday Month</title>
+  <style>
+    body {
+      background-color: pink;
+      text-align: center;
+      font-family: cursive;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Marquee Heading */
+    .marquee-container {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      height: 100px;
+      margin-top: 20px;
+    }
+
+    .marquee-text {
+      position: absolute;
+      white-space: nowrap;
+      font-size: 50px;
+      font-weight: bold;
+      color: #c12a55;
+      left: 100%;
+      animation: moveToCenter 3s ease-out forwards;
+    }
+
+    @keyframes moveToCenter {
+      0% { left: 100%; transform: translateX(0); }
+      100% { left: 50%; transform: translateX(-50%); }
+    }
+
+    /* Flex layout for boxes + cake */
+    .cake-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+      gap: 30px;
+    }
+
+    .link-box {
+      width: 160px;
+      height: 100px;
+      background-color: #ffc0cb;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .link-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(255, 0, 102, 0.5);
+    }
+
+    .link-box a {
+      text-decoration: none;
+      color: #c12a55;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .center img {
+      border-radius: 15px;
+      width: 300px;
+      height: 220px;
+    }
+
+    /* Centered text animations */
+    #home h1, #home h3 {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      color: #b32b4a;
+      opacity: 0;
+    }
+
+    #home h1 {
+      top: 400px;
+      animation: moveToCenterH1 3s ease-out forwards;
+      animation-delay: 3.2s;
+    }
+
+    #home h3 {
+      top: 450px;
+      animation: moveToCenterH3 3s ease-out forwards;
+      animation-delay: 6s;
+    }
+
+    @keyframes moveToCenterH1 {
+      0% { left: 100%; opacity: 0; }
+      100% { left: 50%; transform: translateX(-50%); opacity: 1; }
+    }
+
+    @keyframes moveToCenterH3 {
+      0% { left: -100%; opacity: 0; }
+      100% { left: 50%; transform: translateX(-50%); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Marquee Heading -->
+  <div class="marquee-container">
+    <div class="marquee-text">✨ HAPPYYY BIRTHDAYYY MONTH 💗✨</div>
+  </div>
+
+  <!-- Cake and link boxes section -->
+  <div class="cake-section">
+    <div class="link-box">
+      <a href="amaan.html" target="_blank">🎁 About you</a>
+    </div>
+    <div class="link-box">
+        <a href="memories.html" target="_blank">Our Memories</a>
+    </div>
+
+    <div class="center">
+      <img src="images/images.jpeg" alt="Birthday Cake" />
+    </div>
+
+    <div class="link-box">
+      <a href="ourgallery.html" target="_blank">📸 Our gallery</a>
+    </div>
+    <div class="link-box">
+        <a href="myfeelings.html" target="_blank">My Message</a>
+    </div>
+  </div>
+
+  <!-- Centered messages -->
+  <section id="home">
+    <h1>How can I keep calm when it's my baby's birthday month!</h1>
+    <h3>Welcome to a little digital world created by your pretty girlfriend.</h3>
+  </section>
+</body>
+</html>
